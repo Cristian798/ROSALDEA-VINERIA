@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/1b019a7a2c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <title>ROSALDEA VINERIA</title>
+    <link rel="shortcut icon" href="./images/LOGO.png" type="image/x-icon">
+    <link rel="stylesheet" href="./style.css">
+    
+    
+
+
+</head>
+
+<body>
+    <header>
+        <div class="header-section container">
+            <img class="logo" src="./images/logo.png" alt="">
+            <h1>ROSALDEA VINERIA</h1>
+            <section>
+                <div id="menu-bar" class="fas fa-bars"></div>
+                
+                <nav class="navbar">
+
+                    <a href="#contact">¡CONTACTANOS!</a>
+                    <a href="/USER/login.html">¡INICIA SESION!</a>
+                    <a href="/USER/signup.html">¡CREA TU CUENTA!</a>
+
+                </nav>
+            </section>
+            <div>
+                <img onmouseover="showCart(this)" class="cart" src="./images/CARRITO.png">
+                <p class="count-product">0</p>
+            </div>
+            <div class="cart-products" id="products-id">
+                <p class="close-btn" onclick="closeBtn()">X</p>
+                <h3>Mi carrito</h3>
+                <div class="card-items">
+
+                </div>
+                <h2>Total a Pagar: $ <strong class="price-total">0</strong> </h2>
+                <div class="pagar">
+                    <a href="https://www.bancolombia.com/pagos?main-section=personas&filter-option=todos"
+                       target="_blank"
+                    >PAGAR</a>
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+    
+
+    <main>
+        <div id="slider">
+            <input type="radio" name="slider" id="slide1" checked>
+            <input type="radio" name="slider" id="slide2">
+            <input type="radio" name="slider" id="slide3">
+            <input type="radio" name="slider" id="slide4">
+            <div id="slides">
+                <div id="overflow">
+                    <div class="inner">
+                        <div class="slide slide_1">
+
+                            <div class="slide-content">
+                                <img src="./images/VINO BLANCO.png">
+
+                            </div>
+                        </div>
+                        <div class="slide slide_2">
+                            <div class="slide-content">
+                                <img src="./images/VINO GATO NEGRO.png">
+                            </div>
+                        </div>
+                        <div class="slide slide_3">
+                            <div class="slide-content">
+                                <img src="./images/VINO MANZANA.png">
+                            </div>
+                        </div>
+                        <div class="slide slide_4">
+                            <div class="slide-content">
+                                <img src="./images/VINO OPORTO.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="controls">
+                <label for="slide1"></label>
+                <label for="slide2"></label>
+                <label for="slide3"></label>
+                <label for="slide4"></label>
+            </div>
+            <div id="bullets">
+                <label for="slide1"></label>
+                <label for="slide2"></label>
+                <label for="slide3"></label>
+                <label for="slide4"></label>
+            </div>
+        </div>
+    </main>
+    <div id="productos">
+         <h1>PRODUCTOS</h1>
+    </div>
+
+    <section class="container">
+        <div class="products">
+            <div class="carts">
+                <div>
+                    <img src="./images/VINO BLANCO.png" alt="">
+                    <p><span>100000</span>$</p>
+                </div>
+                <p class="title">VINO BLANCO</p>
+                <a href="" data-id="1" class="btn-add-cart">Comprar</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="./images/VINO GATO NEGRO.png" alt="">
+                    <p><span>100000</span>$</p>
+                </div>
+                <p class="title"> VINO GATO NEGRO</p>
+                <a href="" class="btn-add-cart" data-id="2">Comprar</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="./images/VINO MANZANA.png" alt="">
+                    <p><span>100000</span>$</p>
+                </div>
+                <p class="title"> VINO MANZANA</p>
+                <a href="" data-id="3" class="btn-add-cart">Comprar</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="./images/VINO NARANJA.png" alt="">
+                    <p><span>100000</span>$</p>
+                </div>
+                <p class="title"> VINO NARANJA </p>
+
+                <a href="" data-id="4" class="btn-add-cart">Comprar</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="./images/VINO OPORTO.png" alt="">
+                    <p><span>100000</span>$</p>
+                </div>
+                <p class="title"> VINO OPORTO</p>
+                <a href="" data-id="5" class="btn-add-cart">Comprar</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="./images/VINO TRADICIONAL.png" alt="">
+                    <p><span>100000</span>$</p>
+                </div>
+                <p class="title"> VINO TRADICIONAL
+                    
+                </p>
+                <a href="" data-id="6" class="btn-add-cart">Comprar</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="./images/VINO UVA MORADA.png" alt="">
+                    <p><span>100000</span>$</p>
+                </div>
+                <p class="title"> VINO UVA MORADA</p>
+                <a href="" data-id="7" class="btn-add-cart">Comprar</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="./images/VINO UVA VERDE.png" alt="">
+                    <p><span>100000</span>$</p>
+                </div>
+                <p class="title">VINO UVA VERDE</p>
+                <a href="" data-id="8" class="btn-add-cart">Comprar</a>
+            </div> 
+            <div class="carts">
+                <div>
+                    <img src="./images/estante 4.jpg" alt="">
+                    <p><span>100000</span>$</p>
+                </div>
+                <p class="title"> ESTANTERIA</p>
+                <a href="" data-id="9" class="btn-add-cart">Comprar</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="./images/estante.jpg" alt="">
+                    <p><span>100000</span>$</p>
+                </div>
+                <p class="title"> ESTANTERIA</p>
+                <a href="" data-id="10" class="btn-add-cart">Comprar</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="./images/estanteria 2.jpg" alt="">
+                    <p><span>100000</span>$COP</p>
+                </div>
+                <p class="title"> ESTANTERIA</p>
+                <a href="" data-id="11" class="btn-add-cart">Comprar</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="./images/estanteria 3.jpg" alt="">
+                    <p><span>100000</span>$</p>
+                </div>
+                <p class="title"> ESTANTERIA</p>
+                <a href="" data-id="11" class="btn-add-cart">Comprar</a>
+            </div>
+        </div>
+    </section>
+    <section id="video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/nzBVXkSFD10" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </section>
+    <section class="contact" id="contact">
+
+        <div class="heading">
+            <h1>CONTACTANOS</h1>
+    </div>
+ 
+            <div class="inputBox">
+        <form action="https://formsubmit.co/cardonacocristian285@gmail.com" method="POST">
+            <form action="">
+                <div class="inputBox">
+                    <input type="text" placeholder="Tu Nombre">
+                    <input type="email" placeholder="Tu Email">
+                </div>
+                <div class="inputBox">
+                    <input type="number" placeholder="Tu Numero">
+                    <input type="text" placeholder="Direccion">
+                </div>
+                <textarea placeholder="Escribe Tu Mensaje..." name="" id="" cols="30" rows="10"></textarea>
+                <input type="submit" value="ENVIAR" class="btn">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_next" value="http://127.0.0.1:5501/index.html#contact">
+            </form>
+
+            </div>
+
+        </form>
+
+
+    </section>
+
+
+
+
+    <footer>
+        <div class="s_container">
+            <div class="content">
+                <div class="box">
+                    <h3>Nuestra Ubicacion</h3>
+                    <ul>
+                        <li><strong> Medellin, Colombia</strong></li>
+                        <li><strong>cardonacocristian285@gmail.com</strong></li>
+                        <li><strong>57+3054733405</strong></li>
+
+                        <li class="icon">
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-youtube"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="box">
+                    <h3>Ventas</h3>
+                    <ul>
+
+                        <strong><li> <a href="#">ROSALDEA VINERIA</a> </li></strong>
+
+                    </ul>
+                </div>
+                <div class="box">
+                    <h3>Atención al cliente</h3>
+                    <ul>
+                       
+                        <a href="#">
+                            <strong><li>Centro de ayuda</li></strong>
+                        </a>
+                        <a href="#">
+                            <strong><li>Acerca de nosotros</li></strong>
+                        </a>
+
+                    </ul>
+                </div>
+                <div class="box">
+                    <h3>Política</h3>
+                    <ul>
+                        <a href="#">
+                            <strong><li>Envío - Devolución</li></strong>
+                        </a>
+                        <a href="#">
+                            <strong><li>Términos y condiciones</li></strong>
+                        </a>
+                        <a href="#">
+                            <strong><li>Métodos de pago</li></strong>
+                        </a>
+                        <a href="#">
+                            <strong><li>Preguntas más frecuentes</li></strong>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <section class="Payment">
+        <div class="s_container1">
+            <h3> Aceptamos los siguientes métodos de pago</h3>
+            <div class="content">
+                <div class="box">
+
+                <div class="box">
+                    <img src="images/boncolombia.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <div id="button-up">
+        <i class="fas fa-chevron-up"></i>
+        
+    </div>
+    <script src="./button-up.js"></script>
+
+
+    <script>
+        function showCart(x) {
+            document.getElementById("products-id").style.display = "block";
+        }
+
+        function closeBtn() {
+            document.getElementById("products-id").style.display = "none";
+        }
+    </script>
+    <script src="./custom.js"></script>
+    
+
+</body>
+
+
+</html>
